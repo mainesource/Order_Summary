@@ -1,0 +1,113 @@
+:root {
+  /* Primary Colors */
+  --blank-color: hsl(255, 100%, 94%);
+  --payment-color: hsl(245, 75%, 52%);
+  /* Neutral Colors */
+  --subscription-color: hsl(225, 100%, 98%);
+  --pale-blue: hsl(224, 23%, 55%);
+  --text-color: hsl(223, 47%, 23%);
+  /* borders */
+  --radius: 15px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Red Hat Display', sans-serif;  
+  background: url(/images/pattern-background-mobile.svg) no-repeat center center/cover;  
+}
+.container {
+  max-width: 380px;
+  margin: 60px 30px;
+  background-color: #fff;  
+  border-radius: var(--radius);
+  box-shadow: 10px 10px 30px;  
+}
+
+.order_img img{
+  max-width: 100%;
+  border-radius: 15px 15px 0 0;
+}
+.order_summary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;  
+}
+.order_summary>h3 {
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+.order_summary>p {
+  margin-bottom: 20px;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--pale-blue);  
+}
+
+.order_subscription{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: var(--subscription-color);
+  margin-bottom: 20px;
+  border-radius: var(--radius);  
+}
+.subscription_icon {  
+  margin-right: 20px;
+}
+.current_subscription {
+  margin-right: 40px;  
+}
+.current_subscription p:first-of-type  {  
+  font-weight: 900;  
+}
+.current_subscription p:last-of-type {
+  color: var(--pale-blue);
+}
+.change_subscription {
+  font-weight: 700;
+}
+.change_subscription a:hover {
+  text-decoration: none;
+  opacity: 50%;
+}
+
+.order_payment {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  background-color: var(--payment-color);  
+  border-radius: var(--radius);
+  margin-bottom: 40px;  
+  box-shadow: 1px 10px 5px 3px var(--blank-color);
+}
+.order_payment a{
+  text-decoration: none;
+  color: #fff;
+}
+.order_payment:hover {
+  opacity: 50%;
+  cursor: pointer;
+}
+.order_cancel a{
+  text-decoration: none;
+  color: var(--pale-blue);
+  font-weight: 900;
+}
+.order_cancel:hover a{
+  color: var(--text-color);
+}
+
+.attribution { 
+  display: flex;
+  font-size: 11px;  
+  justify-content: center;  
+}
+.attribution a { 
+  color: hsl(228, 45%, 44%);
+}

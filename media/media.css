@@ -1,0 +1,17 @@
+@media (max-width: 361px) {
+  .order_subscription {
+    font-size: .78rem
+    ;
+  }
+}
+
+@media (min-width: 469px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(/images/pattern-background-desktop.svg) no-repeat center center/cover; 
+  }
+  
+}
