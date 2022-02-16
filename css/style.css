@@ -71,7 +71,11 @@ body {
   color: var(--pale-blue);
 }
 .change_subscription {
-  font-weight: 700;
+  font-weight: 700;  
+}
+
+.change_subscription a {
+  transition: all .4s ease-in;
 }
 .change_subscription a:hover {
   text-decoration: none;
@@ -86,10 +90,12 @@ body {
   border-radius: var(--radius);
   margin-bottom: 40px;  
   box-shadow: 1px 10px 5px 3px var(--blank-color);
+  transition: all .4s ease-in;
 }
 .order_payment a{
   text-decoration: none;
   color: #fff;
+  
 }
 .order_payment:hover {
   opacity: 50%;
@@ -99,6 +105,7 @@ body {
   text-decoration: none;
   color: var(--pale-blue);
   font-weight: 900;
+  transition: all .4s ease-in;
 }
 .order_cancel:hover a{
   color: var(--text-color);
